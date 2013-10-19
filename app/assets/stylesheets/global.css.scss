@@ -9,5 +9,15 @@ body {
 
 .custom-font {
 	color: yellow;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.cool-font-big {
+font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
+font-weight: 100;
+font-size: 64px;
+}
+
+.cool-font-small {
+font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
+font-weight: 200;
+font-size: 34px;
 }
