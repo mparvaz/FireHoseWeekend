@@ -22,6 +22,11 @@
 	<%= pic.learned %>
 	</p>
 
+	<% if pic.user.present? %>
+		<p>
+		Email: <%= pic.user.email %>
+		</p>
+		<% end%>
 </div>
 
 
