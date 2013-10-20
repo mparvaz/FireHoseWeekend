@@ -1,8 +1,6 @@
-
+<div class="custom-font">
+<h2 class="cool-font-medium">Upload your stuff here ...</h2>
 <div class="custom-font boxy span5 offset3 text-center">
-
-
-<h2 class="cool-font-small">Upload your stuff</h2>
 
 <%= simple_form_for @pic do |f| %>
 	<%= f.input :hour, :label=> 'Which Hour', :placeholder=> 'Enter the hour' 		%>
@@ -11,7 +9,8 @@
 	<%= f.input :learned, :label=> 'What did you learn?', :placeholder=> 'CSSA, HTML5, or whatever you like!', :input_html=> {:rows=> '5'}	%>
 </br>
 
-	<%= submit_tag 'Submit', :class => 'btn btn-warning btn-large' 	%>
+	<%= submit_tag 'Submit', :class => 'btn btn-danger btn-large' 	%>
 	
 <% end %>
+</div>
 </div>

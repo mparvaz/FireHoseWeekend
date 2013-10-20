@@ -1,12 +1,12 @@
 <div class="custom-font">
 
-<h2 class="cool-font-big text-center">These are my pictures</h2>
+<h2 class="cool-font-medium">This is how it all went down ...</h2>
 
 
 <%	@pics.each do |pic| %>
 <div class="boxy span3">
 	<h2> 
-		Hour <%= pic.hour %>
+		<%= pic.hour %>
 	</h2>
 	
 	<div>
@@ -28,5 +28,3 @@
 <% end %>
 </div>
 
-	<%= link_to 'HOME', root_path %>
-	

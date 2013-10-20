@@ -1,6 +1,6 @@
 
 body {
-	background: url('NYC_SkyLine_bkgrd.jpg') no-repeat center center fixed; 
+	background: url('NYC_SkyLine_Sketch.jpg') no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -8,22 +8,109 @@ body {
 }
 
 .custom-font {
-	color: yellow;
+	color: brown;
 }
 .cool-font-big {
-font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
-font-weight: 100;
-font-size: 64px;
+	margin-top: 30px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-weight: 200;
+	font-size: 55px;
+	color: brown;
 }
 
-.cool-font-small {
-font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
-font-weight: 200;
-font-size: 34px;
+.cool-font-medium {
+	margin-left: 20px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-weight: 200;
+	font-size: 34px;
 }
 
 .cool-font-tiny {
-font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
-font-weight: 300;
-font-size: 20px;
+	margin-top: 0px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: brown;
 }
+
+/* footer */
+
+footer {
+  	margin-top: 0px;
+  	padding-top: 5px;
+  	border-top: 1px solid #eaeaea;
+  	color: #999;
+}
+
+footer a {
+  	color: #555;
+}
+
+footer a:hover {
+  	color: #222;
+}
+
+footer small {
+  	float: left;
+}
+
+footer ul {
+  	float: right;
+  	list-style: none;
+}
+
+footer ul li {
+  	float: left;
+  	margin-left: 10px;
+}
+
+/* set the background-color to red */
+.navbar-inner
+{
+    background-color: maroon;
+    /* remove the gradient */
+    background-image: none;
+    /* set font color to white */
+    color: white;
+}   
+
+/* menu items */
+
+    /* set the background of the menu items to pink and default color to white */
+
+        .navbar .nav > li > a {
+          background-color: maroon;   
+          color: white;
+          font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          text-shadow: 0 0px 0 #ffffff;
+        }
+
+
+    /* set hover and focus to lightblue */
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a:hover {
+      background-color: gray;
+      color: white;
+    }
+        /* set active item to darkgreen */
+        .navbar .nav > .active > a,
+        .navbar .nav > .active > a:hover,
+        .navbar .nav > .active > a:focus {
+
+          background-color: darkgreen;
+          color: white;
+        }
+
+    /* set font color and background of the project name (brand) */
+
+    .navbar .brand 
+    {
+          background-color: maroon;
+          color: white;
+          font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		  font-weight: 400;
+          font-size: 20px;
+          text-shadow: 0 0px 0 #ffffff;
+    }

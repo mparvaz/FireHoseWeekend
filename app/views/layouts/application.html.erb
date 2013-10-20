@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse">
+<div class="navbar">
   <div class="navbar-inner">
     <div class="container">
  
@@ -20,24 +20,33 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to 'FireHoseNYC', root_path, :class => 'brand' %>
+      <%= link_to 'FireHouseNYC', root_path, :class => 'brand' %>
+      
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
+      
         <!-- .nav, .navbar-search, .navbar-form, etc -->
       <ul class="nav">
+      	
       	<li>
-		<%= link_to 'My App', pics_path %>
+		<%= link_to 'The App', pics_path %>
 		<li>
+		
 		<li>
-		<%= link_to 'Create New Image', new_pic_path %>
+		<%= link_to 'New Image', new_pic_path %>
 		<li>
-      </ul>
- 
+        
+        <form class="navbar-search pull-left">
+  			<input type="text" class="search-query" placeholder="Search">
+	    </form>
+		
+		</ul>
+
     </div>
   </div>
 </div>
 
 <%= yield %>
-
+<%= render 'layouts/footer' %>
 </body>
 </html>
