@@ -3,7 +3,7 @@
 <div class="custom-font boxy span5 offset3 text-center">
 
 <%= simple_form_for @pic do |f| %>
-	<%= f.input :hour, :label=> 'Which Hour', :placeholder=> 'Enter the hour' 		%>
+	<%= f.input :hour, :label=> 'Which Hour', :labelfont=> "cool-font-medium", :placeholder=> 'Enter the hour' 		%>
 	<%= f.input :image, :label=> 'Upload A Pic', :as=> :file 		%>
 	<%= f.input :emotion, :label=> 'How did you feel?', :placeholder=> 'Happy, Stoked, Angry, Pissed'	%>
 	<%= f.input :learned, :label=> 'What did you learn?', :placeholder=> 'CSSA, HTML5, or whatever you like!', :input_html=> {:rows=> '5'}	%>
