@@ -1,35 +1,34 @@
 <div class="custom-font">
+	<h2 class="cool-font-medium">This is how it all went down ...</h2>
 
-<h2 class="cool-font-medium">This is how it all went down ...</h2>
+	<div class="container cool-font-tiny">
+		<div class="row">
+			<%	@pics.each do |pic| %>
+				<div class="boxy span3">
+					<h2> 
+						Hour <%= pic.hour %>
+					</h2>
+					
+					<div>
+						<%= image_tag pic.image.to_s	%>
+					</div>
 
+					<p>
+					<%= pic.emotion %>
+					</p>
 
-<%	@pics.each do |pic| %>
-<div class="boxy span3">
-	<h2> 
-		Hour <%= pic.hour %>
-	</h2>
-	
-	<div>
-		<%= image_tag pic.image.to_s	%>
+					<p>
+					I learned that
+					<%= pic.learned %>
+					</p>
+
+					<% if pic.user.present? %>
+						<p>
+						Email: <%= pic.user.email %>
+						</p>
+					<% end%>
+				</div>
+			<% end %>
+		</div>
 	</div>
-
-	<p>
-	<%= pic.emotion %>
-	</p>
-
-	<p>
-	I learned that
-	<%= pic.learned %>
-	</p>
-
-	<% if pic.user.present? %>
-		<p>
-		Email: <%= pic.user.email %>
-		</p>
-		<% end%>
 </div>
-
-
-<% end %>
-</div>
-
